@@ -7,12 +7,12 @@ public class Stock
     int QuantityLeft;
     int Price;    //Each Product
 
-    Stock(String name,int QuantityLeft,boolean availablity)
+    /*Stock(String name,int QuantityLeft,boolean availablity)
     {
         this.availablity=availablity;
         this.name=name;
         this.QuantityLeft=QuantityLeft;   
-    }
+    }*/
 
     Stock(){}
 
@@ -39,5 +39,15 @@ public class Stock
         }
         return true;
         
+    }
+
+    void PrintStock()
+    {
+        System.out.println("====================");
+        System.out.println("Name:"+name);
+        System.out.println("Original Quantity:"+Quantity);
+        System.out.println("Quantity Left:"+QuantityLeft);
+        System.out.println("Price:"+Price);
+        System.err.println("Availability:"+availablity);
     }
 }
