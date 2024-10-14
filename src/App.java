@@ -10,10 +10,9 @@ public class App {
         Scanner input = new Scanner(System.in);
         do{
             System.out.println("1.Add Inventory");
-            System.err.println("2.View Inventory");
-            System.out.println("3.Discount");
-            System.out.println("4.Invoice");
-            System.out.println("5.Exit");
+            System.out.println("2.View Inventory");
+            System.out.println("3.Invoice");
+            System.out.println("4.Exit");
             System.out.print("Enter your choice:");
             choice=input.nextInt();
             switch(choice)
@@ -33,8 +32,8 @@ public class App {
                         newObjStock[j] = new Stock();
                         newObjStock[j].InputStock();
                     }
-                    objStock = newObjStock;
-                    n += newObjects;
+                    objStock=newObjStock;
+                    n+=newObjects;
                     break;
                 }
                 case 2:
@@ -49,12 +48,8 @@ public class App {
                 {
                     break;
                 }
-                case 4:
-                {
-                    break;
-                }
             }
-        }while(choice<5);
+        }while(choice<4);
         input.close();
     }
 }

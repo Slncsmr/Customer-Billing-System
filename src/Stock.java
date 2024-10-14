@@ -48,6 +48,6 @@ public class Stock
         System.out.println("Original Quantity:"+Quantity);
         System.out.println("Quantity Left:"+QuantityLeft);
         System.out.println("Price:"+Price);
-        System.err.println("Availability:"+availablity);
+        System.out.println("Availability:"+availablity);
     }
 }
