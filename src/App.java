@@ -7,12 +7,14 @@ public class App {
         int choice;
         int n=0;
         Stock[] objStock = null;
+        Sale sale = new Sale();
         Scanner input = new Scanner(System.in);
         do{
             System.out.println("1.Add Inventory");
             System.out.println("2.View Inventory");
             System.out.println("3.Invoice");
-            System.out.println("4.Exit");
+            System.out.println("4.Discount");
+            System.out.println("5.Exit");
             System.out.print("Enter your choice:");
             choice=input.nextInt();
             switch(choice)
@@ -44,12 +46,25 @@ public class App {
                     }
                     break;
                 }
-                case 3:
+                case 3: 
                 {
+                    if (objStock == null || n == 0)
+                    {
+                        System.out.println("No inventory available.");
+                    } 
+                    else
+                    {
+                        sale.generateInvoice(objStock, n);
+                    }
+                    break;
+                }
+                case 4:
+                {
+                    sale.viewDiscountInfo();
                     break;
                 }
             }
-        }while(choice<4);
+        }while(choice<5);
         input.close();
     }
 }
