@@ -1,4 +1,4 @@
-    /*
+/*
 Step 1 : Get user input such as name and others
 Step 2 : Get desired objects and its price (could intergrate with database to get price)
 Step 3 : print output total price of the bought items 
@@ -20,7 +20,15 @@ public class App {
             {
                 case 1:
                 {
-                    //input_stock();
+                    System.out.print("Enter number of objects to be stocked:");
+                    int n=input.nextInt();
+                    input.nextLine();
+                    Stock objStock[]=new Stock[n];
+                    for(int i=0;i<n;i++)
+                    {                                                                                                                                                       
+                        objStock[i] = new Stock();
+                        objStock[i].InputStock();
+                    }
                     break;
                 }
                 case 2:

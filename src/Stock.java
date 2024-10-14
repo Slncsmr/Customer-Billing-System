@@ -3,33 +3,42 @@ public class Stock
 {
     String name;
     boolean availablity;
-    int quantity_left;
+    int Quantity;
+    int QuantityLeft;
+    int Price;    //Each Product
 
-    Stock(String name,int quantity_left, boolean availablity)
+    Stock(String name,int QuantityLeft,boolean availablity)
     {
         this.availablity=availablity;
         this.name=name;
-        this.quantity_left=quantity_left;   
+        this.QuantityLeft=QuantityLeft;   
     }
 
-    void input_stock()
+    Stock(){}
+
+    void InputStock()
     {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the name of the product:");
+        System.out.println("====================");
+        System.out.print("Enter the name of the product:");
         name=input.nextLine();
-        System.out.println("Enter the quantity of the product in stock:");
-        quantity_left=input.nextInt();
-        System.out.println("Is this product available (Y/N):");
-        char ask=input.nextLine().charAt(0);
-        if(ask=='Y'||ask=='y')
+        System.out.print("Enter the quantity of the product in stock:");
+        Quantity=input.nextInt();
+        QuantityLeft=Quantity;
+        System.out.print("Enter the price for the above mentioned number of quantites:");
+        int tprice=input.nextInt();
+        Price=tprice/Quantity;
+        availablity=CheckAvailabiltity(QuantityLeft);
+    }
+    
+    boolean CheckAvailabiltity(int QuantityLeft)
+    {
+        if(QuantityLeft==0)
         {
-            availablity=true;
+            return false;
         }
-        else if (ask=='N'||ask=='n')
-        {
-            availablity=false;
-        }
-        input.close();
-    }   
+        return true;
+        
+    }
 }
 
