@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Stock
 {
     String name;
@@ -6,13 +7,6 @@ public class Stock
     int Quantity;
     int QuantityLeft;
     int Price;    //Each Product
-
-    /*Stock(String name,int QuantityLeft,boolean availablity)
-    {
-        this.availablity=availablity;
-        this.name=name;
-        this.QuantityLeft=QuantityLeft;   
-    }*/
 
     Stock(){}
 

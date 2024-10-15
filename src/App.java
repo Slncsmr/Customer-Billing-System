@@ -1,6 +1,5 @@
-//To-do : print output total price of the bought items 
-
 import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) 
     {
@@ -12,8 +11,8 @@ public class App {
         do{
             System.out.println("1.Add Inventory");
             System.out.println("2.View Inventory");
-            System.out.println("3.Invoice");
-            System.out.println("4.Discount");
+            System.out.println("3.Buying");
+            System.out.println("4.Invoice");
             System.out.println("5.Exit");
             System.out.print("Enter your choice:");
             choice=input.nextInt();
@@ -60,7 +59,10 @@ public class App {
                 }
                 case 4:
                 {
-                    sale.viewDiscountInfo();
+                    for (int i=0;i<n;i++) 
+                    {
+                       sale.PrintInvoice(objStock, n);
+                    }
                     break;
                 }
             }

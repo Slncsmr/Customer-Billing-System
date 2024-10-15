@@ -39,6 +39,7 @@ class Sale extends Stock
 
         double discountedTotal = applyDiscount(totalPrice);
         System.out.println("Total Price of Purchased Items: $" + totalPrice);
+        viewDiscountInfo();
         System.out.println("Discounted Price: $" + discountedTotal);
     }
 
@@ -66,5 +67,19 @@ class Sale extends Stock
         {
             System.out.println("No discount available for the current purchase amount.");
         }
+    }
+
+    void PrintInvoice(Stock[] objStock, int n)
+    {
+        String leftAlignFormat = "| %-5s | %-20s | %-10s |%n";
+            
+        System.out.println("---------------------------------------------");
+        System.out.printf(leftAlignFormat, "S No", "Product Name", "Price");
+        System.out.println("--------------------------------------------------");
+        for (int i = 0; i < n; i++) 
+        {
+            System.out.printf(leftAlignFormat, i + 1, objStock[i].name, "$" + objStock[i].Price);
+        }
+        System.out.println("---------------------------------------------");
     }
 }
