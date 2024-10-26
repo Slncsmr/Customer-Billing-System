@@ -8,12 +8,14 @@ public class App {
         Stock[] objStock = null;
         Sale sale = new Sale();
         Scanner input = new Scanner(System.in);
-        do{
+        do
+        {
+            System.out.println();
             System.out.println("1.Add Inventory");
             System.out.println("2.View Inventory");
-            System.out.println("3.Buying");
-            System.out.println("4.Invoice");
-            System.out.println("5.Exit");
+            System.out.println("3.Buying/Invoice");
+            System.out.println("4.Exit");
+            System.out.println();
             System.out.print("Enter your choice:");
             choice=input.nextInt();
             switch(choice)
@@ -39,6 +41,10 @@ public class App {
                 }
                 case 2:
                 {
+                    if (objStock == null || n == 0)
+                    {
+                        System.out.println("No inventory available.");
+                    } 
                     for (int i=0;i<n;i++) 
                     {
                         objStock[i].PrintStock();   
@@ -57,16 +63,8 @@ public class App {
                     }
                     break;
                 }
-                case 4:
-                {
-                    for (int i=0;i<n;i++) 
-                    {
-                       sale.PrintInvoice(objStock, n);
-                    }
-                    break;
-                }
             }
-        }while(choice<5);
+        }while(choice<4);
         input.close();
     }
 }
