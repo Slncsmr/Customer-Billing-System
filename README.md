@@ -1,3 +1,5 @@
+# CUSTOMER BILLING SYSTEM USING INHERITANCE
+
 ## Folder Structure
 
 The workspace contains two folders by default, where:
@@ -6,10 +8,8 @@ The workspace contains two folders by default, where:
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-# CUSTOMER BILLING SYSTEM USING INHERITANCE
-
 #### Video Demo:
-#### Description:
+## Description:
 
 The project is divided into three programs and named `App`,`Sale`,`Stock` and it is written in java language and uses basic Object Oriented Programming (OOP's) concept such as Inheritance and other concepts.
 
