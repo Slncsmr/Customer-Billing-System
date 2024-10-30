@@ -11,7 +11,7 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 #### Video Demo:
 #### Description:
 
-The project is divided into three programs and named 'App','Sale','Stock' and it is written in java language and uses basic Object Oriented Programming (OOP's) concept such as Inheritance and other concepts.
+The project is divided into three programs and named `App`,`Sale`,`Stock` and it is written in java language and uses basic Object Oriented Programming (OOP's) concept such as Inheritance and other concepts.
 
 1.App Class:
 
