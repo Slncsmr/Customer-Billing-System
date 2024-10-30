@@ -9,7 +9,7 @@ The workspace contains two folders by default, where:
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
 ## Video Demo
-
+[Link to demo video](https://youtu.be/v6I4rsUs3qk)
 ## Description
 
 The project is divided into three programs and named `App.java`,`Sale.java`,`Stock.java` and it is written in java language and uses basic Object Oriented Programming (OOP's) concept such as Inheritance and other concepts.
