@@ -13,7 +13,7 @@ public class App {
             System.out.println();
             System.out.println("1.Add Inventory");
             System.out.println("2.View Inventory");
-            System.out.println("3.Buying/Invoice");
+            System.out.println("3.Billing/Invoice");
             System.out.println("4.Exit");
             System.out.println();
             System.out.print("Enter your choice:");
