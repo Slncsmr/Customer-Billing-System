@@ -16,20 +16,22 @@ The project is divided into three programs and named `App.java`,`Sale.java`,`Sto
 
 **1.App Class**:
 
+The `App.java` program is the main entry point, where the code execution begins. It contains a switch-case-based menu interface with four main options:
   - The App.java program contains the main method from which the code runs.The main method has a switch case which is used for a menu driven for printing in the console. The switch case has three cases being Add Inventory,View Inventory,Billing/Invoice and finally one for exiting the program.
   - **Add Inventory**: The Add inventory case adds inventory for objects which are inputed from the console, the method InputStock is in the Stock.java file and when the add inventory runs for the second time it stacks the data.
   - **View Inventory**: The View inventory shows how of the stock is left and general details of the object such as name, quantity, price, quantity original bought for and availability of the stock from the method PrintStock in `Stock.java`.
   - **Billing\Invoice**: The Billing\Invoice prompts the user to buy the object and print the invoice from the `Sale.java`.
+  - **Exit**: Exiting away from the console program.
 
 **2. Sale Class**:
 
-The `Sale` class, inheriting from `Stock`, manages sales transactions and generates invoices. Key features include:
+The `Sale` class, inheriting from `Stock`, manages sales transactions and generates invoices.
    - **Discount Management**: Applies discounts based on the total purchase amount.
    - **Invoice Generation**: Prompts the user to input product name and quantity, checks inventory availability, and calculates total and discounted prices. The invoice displays each item’s name, quantity, and price.
 
 **3. Stock Class**:
 
-The `Stock` class handles the inventory for each product. Key features include:
+The `Stock` class manages inventory data, tracking each item’s name, quantity, price, and availability status.
    - **Stock Input**: Allows users to add products, specifying quantity and price.
    - **Availability Check**: Updates product availability based on quantity left after each purchase.
    - **Display Stock**: Shows product details, including name, original and remaining quantities, price per unit, and availability status.
@@ -39,4 +41,5 @@ The `Stock` class handles the inventory for each product. Key features include:
 2. Run the `App` class to start the menu interface using `java App` in the console
 3. Choose options from the menu to interact with the inventory and billing features.
 
-This ia a university project.
+## Project Purpose
+This project was initially developed as a university assignment. Given its practical application, it could also be suitable for submission to the CS50x program.
