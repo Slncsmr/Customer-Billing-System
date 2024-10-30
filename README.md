@@ -21,9 +21,18 @@ The project is divided into three programs and named `App.java`,`Sale.java`,`Sto
   - The View inventory shows how of the stock is left and general details of the object such as name, quantity, price, quantity original bought for and availability of the stock from the method PrintStock in `Stock.java`.
   - The Billing\Invoice prompts the user to buy the object and print the invoice from the `Sale.java`.
 
-2.Sale.java:
+**2. Sale Class**:
 
-3.Stock.java:
+The `Sale` class, inheriting from `Stock`, manages sales transactions and generates invoices. Key features include:
+   - **Discount Management**: Applies discounts based on the total purchase amount.
+   - **Invoice Generation**: Prompts the user to input product name and quantity, checks inventory availability, and calculates total and discounted prices. The invoice displays each item’s name, quantity, and price.
+
+**3. Stock Class**:
+
+The `Stock` class handles the inventory for each product. Key features include:
+   - **Stock Input**: Allows users to add products, specifying quantity and price.
+   - **Availability Check**: Updates product availability based on quantity left after each purchase.
+   - **Display Stock**: Shows product details, including name, original and remaining quantities, price per unit, and availability status.
 
 ## How to Run the Program
 1. Compile `App.java` using `javac App.java` in console.
