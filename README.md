@@ -42,4 +42,4 @@ The `Stock` class manages inventory data, tracking each item’s name, quantity,
 3. Choose options from the menu to interact with the inventory and billing features.
 
 ## Project Purpose
-This project was initially developed as a university assignment. Given its practical application, it could also be suitable for submission to the CS50x program.
+This project was initially developed as a university assignment.
